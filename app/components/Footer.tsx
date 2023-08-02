@@ -14,9 +14,11 @@ export const Footer = () => {
   return (
     <footer className="bg-green-base">
       <div className="max-w-[1200px] m-auto flex flex-col">
-        <div className="flex justify-between items-center mt-10">
-          <Image src={Icon} width={250} height={250} alt="" />
-          <section className="hidden md:block">
+        <div className="flex justify-center md:justify-between items-center mt-10">
+          <div className="hidden md:block">
+            <Image src={Icon} width={250} height={250} alt="" />
+          </div>
+          <section>
             <h1 className="text-xl font-bold">Horário de funcionamento:</h1>
             {daysWeekAndSchedules.map((days) => (
               <div
@@ -29,10 +31,12 @@ export const Footer = () => {
             ))}
           </section>
         </div>
-        <span className="w-full h-[1px] bg-white mt-10"></span>
-        <div className="flex items-center justify-between text-sm my-2">
+        <span className="w-full h-[1px] bg-white/70 mt-10"></span>
+        <div className="flex items-center justify-center md:justify-between text-xs my-2">
           <span>A embalagem que faz a diferença: Embala Brasil!</span>
-          <span>Direitos reservados a Embalagens Brasil</span>
+          <span className="hidden md:block">
+            Direitos reservados a Embalagens Brasil
+          </span>
         </div>
       </div>
     </footer>

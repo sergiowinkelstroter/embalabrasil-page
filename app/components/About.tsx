@@ -7,9 +7,11 @@ export const About = () => {
       id="sobre"
       className="max-w-[1200px] m-auto  flex justify-between my-16 items-center"
     >
-      <div className="w-[600px]">
-        <h3 className="text-3xl text-green-base font-semibold">Sobre Nós</h3>
-        <p className="text-md italic">
+      <div className="w-[600px] px-6">
+        <h3 className="text-2xl md:text-3xl text-green-base font-semibold">
+          Sobre Nós
+        </h3>
+        <p className="text-sm md:text-md italic">
           <br /> Bem-vindo à Embala Brasil! <br /> <br /> Somos uma loja
           especializada em embalagens, que nasceu do sonho de oferecer soluções
           práticas e criativas para os negócios locais e empreendedores
@@ -25,7 +27,7 @@ export const About = () => {
           cuidadosamente escolhida para atender às suas necessidades.
         </p>
       </div>
-      <div>
+      <div className="hidden md:block">
         <Image src={Icon} alt="" width={280} height={280} />
       </div>
     </div>

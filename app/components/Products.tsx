@@ -8,9 +8,10 @@ import KitPote from "/public/products/kit-pote.png";
 
 export const Products = () => {
   return (
-    <div id="produtos" className="bg-green-base py-16">
+    <div id="produtos" className="bg-green-base py-16 px-6 md:px-0">
       <div className="max-w-[1200px] m-auto">
-        <h3 className="text-3xl  font-semibold">Nossos Produtos</h3>
+        <h3 className="text-2xl md:text-3xl font-semibold">Nossos Produtos</h3>
+
         <section className="flex justify-between items-center">
           <ProductCard
             title="Papel Toalha"
@@ -18,11 +19,11 @@ export const Products = () => {
               Deixe seu dia mais prático com os papéis toalha interfolhados, produzidos com matéria prima de alta qualidade, oferecendo higiene, maciez e alta absorção."
             image={PapelToalha}
           />
-          <div></div>
+          <div className="hidden md:block"></div>
         </section>
 
         <section className="flex justify-between items-center">
-          <div></div>
+          <div className="hidden md:block"></div>
           <ProductCard
             title="Talheres descartáveis"
             description="
@@ -39,10 +40,10 @@ export const Products = () => {
               Perfeitos para eventos, lanchonetes e escritórios."
             image={Copo}
           />
-          <div></div>
+          <div className="hidden md:block"></div>
         </section>
         <section className="flex justify-between items-center">
-          <div></div>
+          <div className="hidden md:block"></div>
           <ProductCard
             title="Marmitex Isopor"
             description="
@@ -58,10 +59,10 @@ export const Products = () => {
             "
             image={Sacolas}
           />
-          <div></div>
+          <div className="hidden md:block"></div>
         </section>
         <section className="flex justify-between items-center">
-          <div></div>
+          <div className="hidden md:block"></div>
           <ProductCard
             title="Kit Pote e Tampa"
             description="
