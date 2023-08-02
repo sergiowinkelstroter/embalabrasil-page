@@ -1,8 +1,3 @@
-"use client";
-import { AlignJustify } from "lucide-react";
-import { useState } from "react";
-import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
-
 export const Header = () => {
   return (
     <header className="h-24  flex justify-center">
@@ -33,35 +28,6 @@ export const Header = () => {
               </a>
             </li>
           </ul>
-          <div className="md:hidden">
-            <DropdownMenu.Root>
-              <DropdownMenu.Trigger>
-                <AlignJustify />
-              </DropdownMenu.Trigger>
-              <DropdownMenu.Portal>
-                <DropdownMenu.Content>
-                  <DropdownMenu.Item>
-                    <a href="#sobre">Sobre</a>
-                  </DropdownMenu.Item>
-                  <DropdownMenu.Item>
-                    <a href="#produtos">Produtos</a>
-                  </DropdownMenu.Item>
-                  <DropdownMenu.Item>
-                    <a href="#contato">Contato</a>
-                  </DropdownMenu.Item>
-                  <DropdownMenu.Item>
-                    <a
-                      href="https://api.whatsapp.com/send?phone=5599991402932"
-                      target="_blank"
-                    >
-                      Realizar Pedido
-                    </a>
-                  </DropdownMenu.Item>
-                  <DropdownMenu.Arrow className="fill-white" />
-                </DropdownMenu.Content>
-              </DropdownMenu.Portal>
-            </DropdownMenu.Root>
-          </div>
         </nav>
       </div>
     </header>
